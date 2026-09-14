@@ -37,7 +37,7 @@ jobs:
       - name: Install buildozer and Cython
         run: |
           pip install --upgrade pip
-          pip install "buildozer==1.5.0" "cython>=3.0.10,<3.1"
+          pip install "buildozer==1.5.0" "cython>=3.0.10,<3.1" python-for-android
 
       - name: Patch python-for-android to pin a stable pip version
         run: |
