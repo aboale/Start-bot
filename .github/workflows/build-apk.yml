@@ -48,7 +48,7 @@ jobs:
           for f in pkg_dir.rglob("*.py"):
               text = f.read_text()
               if "pip install -U pip" in text:
-                  new_text = text.replace("pip install -U pip", "pip install -U 'pip==24.0'")
+                  new_text = text.replace("pip install -U pip", "pip install -U 'pip==23.3.2'")
                   f.write_text(new_text)
                   print("Patched:", f)
                   patched += 1
